@@ -10,32 +10,88 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Question extends Activity {
     private boolean answerTrue;
     private String correctAnswer;
+    public int points;
+    public int number;
     private String messageCorrect="Correct answer!";
-    private String messageWrong="Wrong answer! Correct answer is answer 1";
-
+    private String messageWrong="Wrong answer! Correct answer is ";
+    ArrayList<OneQuestion>dataSet=new ArrayList<OneQuestion>();
+    private FirebaseDatabase database;
+    private static final String TAG = "Question";
+    public Question(){
+        correctAnswer="";
+        answerTrue=false;
+        points=0;
+        number=0;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /*
+        database= FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getInstance().getReference("quiz-app-be64e-default-rtdb");
+        myRef.child("message").setValue("Hello, World!");
+        */
+         
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question);
     }
 
-    public Question(){
-        correctAnswer="answer 1";
-        answerTrue=false;
+    private void loadDataset() {
+        DatabaseReference myRef = database.getReference().child("db").child("questions");
+        // Read from the database
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Context context = getApplicationContext();
+                String msg="You need to choose one of the options";
+                int duration= Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, msg, duration);
+                toast.show();
+                if(dataSet.size() != 0) {
+                    dataSet.clear();
+                }
+                for (DataSnapshot questionSnapshot: dataSnapshot.getChildren()) {
+                    OneQuestion question = questionSnapshot.getValue(OneQuestion.class);
+                    dataSet.add(question);
+                }
+                Collections.shuffle(dataSet);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w("FIREBASE", "Failed to read value.", error.toException());
+            }
+        });
     }
 
     public void onClickButton(View v){
-        int x;
-        RadioGroup group=findViewById(R.id.answersGroup);
-        x=group.getCheckedRadioButtonId();
         RadioButton button1 = findViewById(R.id.radio_button1);
         RadioButton button2 = findViewById(R.id.radio_button2);
         RadioButton button3 = findViewById(R.id.radio_button3);
         RadioButton button4 = findViewById(R.id.radio_button4);
+        TextView questionText = findViewById(R.id.questionText);
+        RadioGroup group=findViewById(R.id.answersGroup);
+        int x;
+        x=group.getCheckedRadioButtonId();
         if(v.getId()==R.id.nextButton){
             if(x==-1){
                 Context context = getApplicationContext();
@@ -89,12 +145,13 @@ public class Question extends Activity {
     }
 
     private void nextQuestion(){
-        //setting up initial state
         RadioButton button1 = findViewById(R.id.radio_button1);
         RadioButton button2 = findViewById(R.id.radio_button2);
         RadioButton button3 = findViewById(R.id.radio_button3);
         RadioButton button4 = findViewById(R.id.radio_button4);
+        TextView questionText = findViewById(R.id.questionText);
         RadioGroup group=findViewById(R.id.answersGroup);
+        //setting up initial state
         group.clearCheck();
         button1.setEnabled(true);
         button2.setEnabled(true);
@@ -106,4 +163,26 @@ public class Question extends Activity {
         TextView textView = findViewById(R.id.questionText);
         textView.setText(question);
     }
+
+    private void SetQuestion(OneQuestion q){
+        RadioButton button1 = findViewById(R.id.radio_button1);
+        RadioButton button2 = findViewById(R.id.radio_button2);
+        RadioButton button3 = findViewById(R.id.radio_button3);
+        RadioButton button4 = findViewById(R.id.radio_button4);
+        TextView questionText = findViewById(R.id.questionText);
+        RadioGroup group=findViewById(R.id.answersGroup);
+        questionText.setText(q.text);
+        ArrayList<String> answers=new ArrayList<String>();
+        answers.add(q.answer1);
+        answers.add(q.answer2);
+        answers.add(q.answer3);
+        answers.add(q.correct_answer);
+        correctAnswer=q.correct_answer;
+        number++;
+        Collections.shuffle(answers);
+        for (int i = 0; i < group.getChildCount(); i++) {
+            ((RadioButton) group.getChildAt(i)).setText(answers.get(i));
+        }
+    }
 }
+
