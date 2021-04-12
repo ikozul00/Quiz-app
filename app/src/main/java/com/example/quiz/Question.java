@@ -2,6 +2,7 @@ package com.example.quiz;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,15 +31,16 @@ public class Question extends Activity {
     public int points;
     public int number;
     private String messageCorrect="Correct answer!";
-    private String messageWrong="Wrong answer! Correct answer is ";
+    private String messageWrong="Wrong answer! Correct answer is: ";
     ArrayList<OneQuestion>dataSet=new ArrayList<OneQuestion>();
     private FirebaseDatabase database;
     private static final String TAG = "Question";
+    public static final String RESULT_MESSAGE = "com.example.myfirstapp.MESSAGE";
     public Question(){
         correctAnswer="";
         answerTrue=false;
         points=0;
-        number=0;
+        number=1;
     }
 
     @Override
@@ -64,7 +66,7 @@ public class Question extends Activity {
                     dataSet.add(question);
                 }
                 Collections.shuffle(dataSet);
-                SetQuestion(dataSet.get(0));
+                SetQuestion(dataSet.get(number-1));
 
             }
 
@@ -130,10 +132,11 @@ public class Question extends Activity {
     private void checkAnswer(String answer){
         TextView msgView = findViewById(R.id.messageLabel);
         if(answer.equals(correctAnswer)){
+            points++;
             msgView.setText(messageCorrect);
         }
         else{
-            msgView.setText(messageWrong);
+            msgView.setText(messageWrong+correctAnswer);
         }
     }
 
@@ -144,17 +147,24 @@ public class Question extends Activity {
         RadioButton button4 = findViewById(R.id.radio_button4);
         TextView questionText = findViewById(R.id.questionText);
         RadioGroup group=findViewById(R.id.answersGroup);
-        //setting up initial state
-        group.clearCheck();
-        button1.setEnabled(true);
-        button2.setEnabled(true);
-        button3.setEnabled(true);
-        button4.setEnabled(true);
-        TextView msgView = findViewById(R.id.messageLabel);
-        msgView.setText("");
-        String question="question 2";
-        TextView textView = findViewById(R.id.questionText);
-        textView.setText(question);
+            //setting up initial state
+            group.clearCheck();
+            button1.setEnabled(true);
+            button2.setEnabled(true);
+            button3.setEnabled(true);
+            button4.setEnabled(true);
+            TextView msgView = findViewById(R.id.messageLabel);
+            msgView.setText("");
+        if(number<=2){
+            SetQuestion(dataSet.get(number-1));
+        }
+        else{
+            Intent intent = new Intent(this, QuizResult.class);
+            String message="Your result: "+points+"/2";
+            intent.putExtra(RESULT_MESSAGE, message);
+            startActivity(intent);
+        }
+
     }
 
     private void SetQuestion(OneQuestion q){
@@ -164,7 +174,7 @@ public class Question extends Activity {
         RadioButton button4 = findViewById(R.id.radio_button4);
         TextView questionText = findViewById(R.id.questionText);
         RadioGroup group=findViewById(R.id.answersGroup);
-        questionText.setText(q.text);
+        questionText.setText(number+". "+q.text);
         ArrayList<String> answers=new ArrayList<String>();
         answers.add(q.answer1);
         answers.add(q.answer2);

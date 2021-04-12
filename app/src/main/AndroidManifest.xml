@@ -18,6 +18,7 @@
         <activity android:name=".Question">
 
         </activity>
+        <activity android:name=".QuizResult"></activity>
     </application>
 
 </manifest>
