@@ -36,7 +36,9 @@ public class Question extends Activity {
     private FirebaseDatabase database;
     private static final String TAG = "Question";
     public static final String RESULT_MESSAGE = "com.example.quiz.MESSAGE";
+    public static final String USERNAME_MESSAGE = "com.example.quiz.USERNAME";
     private String category;
+    private String username;
     public Question(){
         correctAnswer="";
         answerTrue=false;
@@ -49,6 +51,7 @@ public class Question extends Activity {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         category = intent.getStringExtra(ChooseCategory.CATEGORY_MESSAGE);
+        username=intent.getStringExtra(ChooseCategory.USERNAME_MESSAGE);
         database= FirebaseDatabase.getInstance("https://quiz-app-be64e-default-rtdb.europe-west1.firebasedatabase.app/");
         loadDataset();
         setContentView(R.layout.question);
@@ -165,6 +168,7 @@ public class Question extends Activity {
             Intent intent = new Intent(this, QuizResult.class);
             String message="Your result: "+points+"/2";
             intent.putExtra(RESULT_MESSAGE, message);
+            intent.putExtra(USERNAME_MESSAGE, username);
             startActivity(intent);
         }
 

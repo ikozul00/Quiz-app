@@ -22,6 +22,8 @@
 
     <activity android:name=".ChooseCategory"></activity>
 
+        <activity android:name=".UsernameInput"></activity>
+
 </application>
 
 </manifest>
