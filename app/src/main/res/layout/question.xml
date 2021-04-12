@@ -15,7 +15,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="100dp"
-        android:text="Question"
+        android:text=""
         />
     <RadioGroup
         android:id="@+id/answersGroup"
@@ -32,28 +32,28 @@
             android:id="@+id/radio_button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="answer 1"
+            android:text=""
             android:onClick="onClickButton"/>
 
         <RadioButton
             android:id="@+id/radio_button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="answer 2"
+            android:text=""
             android:onClick="onClickButton" />
 
         <RadioButton
             android:id="@+id/radio_button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="answer 3"
+            android:text=""
             android:onClick="onClickButton" />
 
         <RadioButton
             android:id="@+id/radio_button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="answer 4"
+            android:text=""
             android:onClick="onClickButton" />
 
 

@@ -43,27 +43,19 @@ public class Question extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*
-        database= FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getInstance().getReference("quiz-app-be64e-default-rtdb");
-        myRef.child("message").setValue("Hello, World!");
-        */
-         
         super.onCreate(savedInstanceState);
+        database= FirebaseDatabase.getInstance("https://quiz-app-be64e-default-rtdb.europe-west1.firebasedatabase.app/");
+        loadDataset();
         setContentView(R.layout.question);
+
     }
 
     private void loadDataset() {
-        DatabaseReference myRef = database.getReference().child("db").child("questions");
+        DatabaseReference myRef = database.getReference("db").child("quiz").child("geografija").child("questions");
         // Read from the database
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                Context context = getApplicationContext();
-                String msg="You need to choose one of the options";
-                int duration= Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, msg, duration);
-                toast.show();
                 if(dataSet.size() != 0) {
                     dataSet.clear();
                 }
@@ -72,6 +64,7 @@ public class Question extends Activity {
                     dataSet.add(question);
                 }
                 Collections.shuffle(dataSet);
+                SetQuestion(dataSet.get(0));
 
             }
 

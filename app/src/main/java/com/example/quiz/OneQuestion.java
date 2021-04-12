@@ -6,6 +6,8 @@ public class OneQuestion {
     public String answer2;
     public String answer3;
     public String correct_answer;
+
+    public OneQuestion(){}
     public OneQuestion(String question_text,String question_answer1, String question_answer2, String question_answer3, String question_correct_answer){
         text=question_text;
         answer1=question_answer1;
