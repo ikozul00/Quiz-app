@@ -19,6 +19,9 @@
 
         </activity>
         <activity android:name=".QuizResult"></activity>
-    </application>
+
+    <activity android:name=".ChooseCategory"></activity>
+
+</application>
 
 </manifest>

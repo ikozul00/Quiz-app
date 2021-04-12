@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_green">
+    <TextView
+        android:id="@+id/categoriesMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="Choose one of the categories:"
+        />
+
+
+    <Button
+        android:id="@+id/filmovi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesMessage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Filmovi"
+        android:onClick="onChooseCategory"
+        />
+
+    <Button
+        android:id="@+id/serije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/filmovi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Serije"
+        android:onClick="onChooseCategory"
+        />
+
+    <Button
+        android:id="@+id/Sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesMessage"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Sport"
+        android:onClick="onChooseCategory"
+        />
+
+    <Button
+        android:id="@+id/Geografija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Sport"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Geografija"
+        android:onClick="onChooseCategory"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

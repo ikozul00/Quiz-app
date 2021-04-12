@@ -35,7 +35,8 @@ public class Question extends Activity {
     ArrayList<OneQuestion>dataSet=new ArrayList<OneQuestion>();
     private FirebaseDatabase database;
     private static final String TAG = "Question";
-    public static final String RESULT_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public static final String RESULT_MESSAGE = "com.example.quiz.MESSAGE";
+    private String category;
     public Question(){
         correctAnswer="";
         answerTrue=false;
@@ -46,6 +47,8 @@ public class Question extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        category = intent.getStringExtra(ChooseCategory.CATEGORY_MESSAGE);
         database= FirebaseDatabase.getInstance("https://quiz-app-be64e-default-rtdb.europe-west1.firebasedatabase.app/");
         loadDataset();
         setContentView(R.layout.question);
@@ -53,7 +56,7 @@ public class Question extends Activity {
     }
 
     private void loadDataset() {
-        DatabaseReference myRef = database.getReference("db").child("quiz").child("geografija").child("questions");
+        DatabaseReference myRef = database.getReference("db").child("quiz").child(category).child("questions");
         // Read from the database
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
