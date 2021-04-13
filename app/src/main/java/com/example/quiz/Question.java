@@ -59,6 +59,7 @@ public class Question extends Activity {
     }
 
     private void loadDataset() {
+        //locate inside a database
         DatabaseReference myRef = database.getReference("db").child("quiz").child(category).child("questions");
         // Read from the database
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -71,6 +72,7 @@ public class Question extends Activity {
                     OneQuestion question = questionSnapshot.getValue(OneQuestion.class);
                     dataSet.add(question);
                 }
+                //randomize questions
                 Collections.shuffle(dataSet);
                 SetQuestion(dataSet.get(number-1));
 
