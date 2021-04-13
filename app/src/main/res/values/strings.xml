@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz app</string>
+    <string name="description">"Odgovori na pitanja i testiraj svoje znanje!"</string>
+    <string name="start">Start</string>
+    <string name="enter_username">Unesi korisničko ime:</string>
+    <string name="korisni_ko_ime">Korisničko ime</string>
+    <string name="dalje">Dalje</string>
+    <string name="odabir_kategorija">Odaberi kategoriju</string>
+    <string name="filmovi">Filmovi</string>
+    <string name="serije">Serije</string>
+    <string name="geografija">Geografija</string>
+    <string name="sport">Sport</string>
+</resources>
