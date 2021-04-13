@@ -36,36 +36,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClickButton"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radio_button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClickButton"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radio_button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClickButton"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radio_button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClickButton"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="20sp" />
 
 
     </RadioGroup>
@@ -77,6 +81,8 @@
         app:layout_constraintTop_toBottomOf="@+id/answersGroup"
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/dalje"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
         android:background="@drawable/corner_button"
         android:layout_marginRight="50dp"
         android:onClick="onClickButton"
@@ -92,6 +98,7 @@
         android:layout_marginBottom="70dp"
         android:textSize="30sp"
         android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
         android:textColorHighlight="@color/white"
         />
 
