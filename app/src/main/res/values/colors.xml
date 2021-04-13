@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
+=======
+    <color name="dark_green">#003300</color>
+    <color name="light_green">#66FF66</color>
+    <color name="ljubicasta">#9C27B0</color>
+    <color name="zelena">#8BC34A</color>
+    <color name="plava">#D50827ED</color>
+    <color name="roza">#E9E91E63</color>
+>>>>>>> 35010549ff5daf64d0b59d911b7e44b1b4282c95
 </resources>

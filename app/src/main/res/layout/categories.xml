@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/username_bacground">
+
+
+    <TextView
+        android:id="@+id/categoriesMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/odabir_kategorija"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/filmovi"
+        android:layout_width="175dp"
+        android:layout_height="112dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/film_gumb"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onChooseCategory"
+        android:text="@string/filmovi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#D50827ED"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesMessage"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/serije"
+        android:layout_width="175dp"
+        android:layout_height="112dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/serije_gumb"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onChooseCategory"
+        android:text="@string/serije"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#E9E91E63"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filmovi" />
+
+    <Button
+        android:id="@+id/Sport"
+        android:layout_width="175dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/sport_gumb"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onChooseCategory"
+        android:text="@string/sport"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesMessage" />
+
+    <Button
+        android:id="@+id/Geografija"
+        android:layout_width="171dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/geografija_gumb"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onChooseCategory"
+        android:text="@string/geografija"
+        android:textColor="@color/white"
+        android:textSize="17.5sp"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport"
+        app:rippleColor="@color/black"
+        app:strokeColor="@color/black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

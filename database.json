@@ -1,0 +1,61 @@
+{"db":
+    {
+    "user":{
+    },
+    "quiz":{
+        "geografija": {
+            "size": 2,
+            "questions": {
+                "1": {
+                    "text": "Koji je glavni grad hrvatske?",
+                    "answer1": "Split",
+                    "answer2": "Zadar",
+                    "answer3": "Šibenik",
+                    "correct_answer": "Zagreb"
+                },
+                "2": {
+                    "text": "Koja se rijeka nalazi u Hrvatskoj?",
+                    "answer1": "Volga",
+                    "answer2": "Nil",
+                    "answer3": "Kongo",
+                    "correct_answer": "Sava"
+                }
+            }
+        },
+        "filmovi": {
+            "size": 2,
+            "questions": {
+                "1": {
+                    "text": "Koliko dijelova ima Harry Potter?",
+                    "answer1": "2",
+                    "answer2": "3",
+                    "answer3": "8",
+                    "correct_answer": "7"
+                },
+                "2": {
+                    "text": "Tko glumi u Titanicu?",
+                    "answer1": "Johnny Deep",
+                    "answer2": "Chris Hemswort",
+                    "answer3": "Ryan Gosling",
+                    "correct_answer": "Leonardo DiCaprio"
+                }
+            }
+        }
+    },
+    "myScore":{
+        "1":10,
+        "2":9
+    },
+    "results":{
+        "geografija":{
+            "1":{
+            "user":"aaaa",
+            "score":10
+            }
+
+        }
+        
+    }
+
+}
+}

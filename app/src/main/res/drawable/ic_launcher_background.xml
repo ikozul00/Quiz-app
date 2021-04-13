@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
@@ -168,3 +169,21 @@
         android:strokeWidth="0.8"
         android:strokeColor="#33FFFFFF" />
 </vector>
+=======
+<selector xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape tools:ignore="ExtraText">
+
+            <gradient
+                android:angle="90"
+                android:startColor="@color/white"
+                android:endColor="@color/white"
+                android:type="linear"/>
+        </shape>
+
+    </item>
+</selector>
+>>>>>>> 35010549ff5daf64d0b59d911b7e44b1b4282c95
