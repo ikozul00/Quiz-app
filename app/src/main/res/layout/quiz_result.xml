@@ -39,4 +39,33 @@
         app:layout_constraintVertical_bias="0.296" />
 
 
+    <Button
+        android:id="@+id/highScoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/oneResultLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="High Scores"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@drawable/corner_button"
+        android:layout_marginRight="50dp"
+        android:onClick="onClickScoreBoardButton"
+        />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/oneResultLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="New Game"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@drawable/corner_button"
+        android:layout_marginRight="50dp"
+        android:onClick="onClickNewGameButton"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

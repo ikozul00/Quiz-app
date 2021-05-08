@@ -37,6 +37,7 @@ public class Question extends Activity {
     private static final String TAG = "Question";
     public static final String RESULT_MESSAGE = "com.example.quiz.MESSAGE";
     public static final String USERNAME_MESSAGE = "com.example.quiz.USERNAME";
+    public static final String CATEGORY_MESSAGE = "com.example.quiz.CATEGORY";
     private String category;
     private String username;
     public Question(){
@@ -166,9 +167,9 @@ public class Question extends Activity {
         }
         else{
             Intent intent = new Intent(this, QuizResult.class);
-            String message="Tvoj rezultat: "+points+"/2";
-            intent.putExtra(RESULT_MESSAGE, message);
+            intent.putExtra(RESULT_MESSAGE, String.valueOf(points));
             intent.putExtra(USERNAME_MESSAGE, username);
+            intent.putExtra(CATEGORY_MESSAGE,category);
             startActivity(intent);
         }
 

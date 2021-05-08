@@ -16,14 +16,13 @@ public class UsernameInput extends Activity {
         setContentView(R.layout.username);
     }
 
+
         public void onClickButtonNext(View v){
             EditText textBox=findViewById(R.id.usernameInput);
             username=textBox.getText().toString();
             Intent intent = new Intent(this, ChooseCategory.class);
             intent.putExtra(USERNAME_MESSAGE, username);
             startActivity(intent);
-
-
         }
 
 }
