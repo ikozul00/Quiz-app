@@ -4,25 +4,30 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
     >
 
     <TextView
         android:id="@+id/username"
-        android:layout_width="fill_parent"
+        android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:text=" " />
+        android:text=" "
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/score"
-        android:layout_width="fill_parent"
+        android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text=" "
-        />
+        android:textColor="@color/crvena"
+        android:textSize="20dp" />
 
 </LinearLayout>

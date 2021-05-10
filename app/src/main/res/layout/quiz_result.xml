@@ -41,31 +41,31 @@
 
     <Button
         android:id="@+id/highScoresButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/oneResultLabel"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="136dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/corner_button"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onClickScoreBoardButton"
         android:text="High Scores"
         android:textColor="@color/white"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:background="@drawable/corner_button"
-        android:layout_marginRight="50dp"
-        android:onClick="onClickScoreBoardButton"
-        />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneResultLabel" />
 
     <Button
         android:id="@+id/newGameButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/oneResultLabel"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="143dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/corner_button"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onClickNewGameButton"
         android:text="New Game"
         android:textColor="@color/white"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:background="@drawable/corner_button"
-        android:layout_marginRight="50dp"
-        android:onClick="onClickNewGameButton"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneResultLabel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
