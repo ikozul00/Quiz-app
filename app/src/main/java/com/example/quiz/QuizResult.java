@@ -71,29 +71,29 @@ public class QuizResult extends Activity {
                         Scores scoreValue = new Scores(scoreSnapshot.child("username").getValue().toString(), Integer.parseInt(scoreSnapshot.child("result").getValue().toString()),Integer.parseInt(scoreSnapshot.child("rank").getValue().toString()));
                         scores.add(scoreValue);
                     }
+                    while(scores.size()<10){
+                        scores.add(new Scores("",0,scores.size()+1));
+                    }
                     int length=scores.size();
-                    if(length>0&&points>scores.get(length-1).result){
-                        for(int i=length-1;i>0;i--){
-                            if(points>=scores.get(i-1).result)
+                    if(points>scores.get(length-1).result){
+                        int i=0;
+                        for(i=length-1;i>=0;i--){
+                            if(i!=0&&points>=scores.get(i-1).result)
                             {
                                 scores.get(i).username=scores.get(i-1).username;
                                 scores.get(i).result=scores.get(i-1).result;
                             }
-                            else if(length==0){
-                                Scores item=new Scores(username,points,length+1);
-                                scores.add(item);
-                            }
-                            else{
+                            else if(i!=0){
                                 scores.get(i).username=username;
                                 scores.get(i).result=points;
+                                break;
                             }
                         }
+                        if(i==-1){
+                            scores.get(0).username=username;
+                            scores.get(0).result=points;
+                        }
                     }
-                    else if(length<10){
-                        Scores item=new Scores(username,points,length+1);
-                        scores.add(item);
-                    }
-
                     database.getReference("db").child("results").child(category).setValue(scores);
                 }
                 else{

@@ -1,68 +1,227 @@
 {
-    "db" : {
-      "myScore" : [ null, 10, 9 ],
-      "quiz" : {
-        "filmovi" : {
-          "questions" : [ null, {
-            "answer1" : "2",
-            "answer2" : "3",
-            "answer3" : "8",
-            "correct_answer" : "7",
-            "text" : "Koliko dijelova ima Harry Potter?"
-          }, {
-            "answer1" : "Johnny Deep",
-            "answer2" : "Chris Hemswort",
-            "answer3" : "Ryan Gosling",
-            "correct_answer" : "Leonardo DiCaprio",
-            "text" : "Tko glumi u Titanicu?"
-          } ],
-          "size" : 2
+  "db" : {
+    "myScore" : [ null, 10, 9 ],
+    "quiz" : {
+      "serije" : {
+        "questions" : [ null, {
+          "answer1" : "The Morrison Tavern",
+          "answer2" : "The Garret Tavern",
+          "answer3" : "The Borrison Tavern",
+          "correct_answer" : "The Garrison Tavern",
+          "text" : "Kako se zove glavni pub u seriji Peaky Blinders gdje se nalaze Shelby?"
         },
-        "geografija" : {
-          "questions" : [ null, {
-            "answer1" : "Split",
-            "answer2" : "Zadar",
-            "answer3" : "Šibenik",
-            "correct_answer" : "Zagreb",
-            "text" : "Koji je glavni grad hrvatske?"
-          }, {
-            "answer1" : "Volga",
-            "answer2" : "Nil",
-            "answer3" : "Kongo",
-            "correct_answer" : "Sava",
-            "text" : "Koja se rijeka nalazi u Hrvatskoj?"
-          } ],
-          "size" : 2
+        {
+          "answer1" : "Christopher Eccleston",
+          "answer2" : "Matt Smith",
+          "answer3" : "William Hartnell",
+          "correct_answer" : "David Tennant",
+          "text" : "Koji škotski glumac je glumio 10. Doktora u seriji Doctor Who?"
+        },
+        {
+          "answer1" : "Olivia Colman",
+          "answer2" : "Imelda Staunton",
+          "answer3" : "Vanessa Kirby",
+          "correct_answer" : "Claire Foy",
+          "text" : "Tko je glumio kraljicu Elizabetu II u prve dvije sezone serije The Crown?"
+        },
+        {
+          "answer1" : "Edith Melba Artois",
+          "answer2" : "Monsieur Alfonse",
+          "answer3" : "Monsieur Roger Leclerc",
+          "correct_answer" : "Rene Artois",
+          "text" : "U seriji Allo Allo,tko je vlasnik malog kafića u Francuskoj tijekom 2.svjetskog rata?"
+        },
+        {
+          "answer1" : "otvaranje Sueskog kanala",
+          "answer2" : "1.svjetski rat",
+          "answer3" : "2.svjetski rata",
+          "correct_answer" : "potapanje Titanika",
+          "text" : "Prva epizoda serije Downton Abbey počinje na isti dan kao koji stvarni povijesni događaj?"
+        },
+        {
+          "answer1" : "Florida",
+          "answer2" : "Texas",
+          "answer3" : "Louisiana",
+          "correct_answer" : "New Mexico",
+          "text" : "U kojoj američkoj državi se događa radnja serije Breaking Bad?"
+        },
+        {
+          "answer1" : "Cersei Lannister",
+          "answer2" : "Ned Stark",
+          "answer3" : "Jon Snow",
+          "correct_answer" : "Robert Baratheon",
+          "text" : "Tko je kralj Westerosa na samom početku serije Igra prijestolja?"
+        },
+        {
+          "answer1" : "1",
+          "answer2" : "4",
+          "answer3" : "2",
+          "correct_answer" : "3",
+          "text" : "Koliko puta se Ross rastao u seriji Prijateji?"
+        },
+        {
+          "answer1" : "5",
+          "answer2" : "4",
+          "answer3" : "2",
+          "correct_answer" : "3",
+          "text" : "Koliko djece ima Tywin Lannister iz serije Igra prijestolja?"
+        },
+        {
+          "answer1" : "Kate",
+          "answer2" : "Rachel",
+          "answer3" : "Monica",
+          "correct_answer" : "Ursula",
+          "text" : "U seriji Prijatelji kako se zove Phoebeina sestra blizanka?"
         }
+    ],
+        "size" : 10
       },
-      "results" : {
-        "filmovi" : {
-          "rank" : 1,
-          "result" : 1,
-          "username" : "aaaa"
-        },
-        "geografija" : [ {
-          "rank" : 1,
-          "result" : 2,
-          "username" : "abc"
+      "filmovi" : {
+        "questions" : [ null, {
+          "answer1" : "2",
+          "answer2" : "3",
+          "answer3" : "8",
+          "correct_answer" : "7",
+          "text" : "Koliko dijelova ima Harry Potter?"
         }, {
-          "rank" : 2,
-          "result" : 2,
-          "username" : "abc"
-        }, {
-          "rank" : 3,
-          "result" : 1,
-          "username" : "abc"
-        }, {
-          "rank" : 4,
-          "result" : 1,
-          "username" : "aaaa"
-        }, {
-          "rank" : 5,
-          "result" : 1,
-          "username" : "abc"
-        } ]
+          "answer1" : "Johnny Deep",
+          "answer2" : "Chris Hemswort",
+          "answer3" : "Ryan Gosling",
+          "correct_answer" : "Leonardo DiCaprio",
+          "text" : "Tko glumi u Titanicu?"
+        } ,
+      {
+        "answer1":"Trnoružica",
+        "answer2":"Shrek",
+        "answer3":"Pepeljuga",
+        "correct_answer":"Snjeguljica i sedam patuljaka",
+        "text":"Kako se zove prvi objavljeni dugometražni animirani film?"
+      },
+      {
+        "answer1":"3",
+        "answer2":"6",
+        "answer3":"2",
+        "correct_answer":"5",
+        "text":"U koliko filmova Stevena Spilberga glumi Tom Hanks?"
+      },
+      {
+        "answer1":"Dirty Dancing",
+        "answer2":"Grease",
+        "answer3":"Saturday Night Fever",
+        "correct_answer":"Pulp Fiction",
+        "text":"Koji film sadrži poznatu scenu plesa glumaca Ume Thurman i Johna Travolte?"
+      },
+      {
+        "answer1":"Kapetan Amerika",
+        "answer2":"Superman",
+        "answer3":"Spiderman",
+        "correct_answer":"Batman",
+        "text":"Alfred Pennyworth je butler kojem superheroju?"
+      },
+      {
+        "answer1":"Dr. No",
+        "answer2":"Zlatno oko",
+        "answer3":"Casino Royale",
+        "correct_answer":"Iz Rusije s ljubavlju",
+        "text":"Kako se zove 2. film o James Bondu?"
+      },
+      {
+        "answer1":"Christopher Nolan",
+        "answer2":"Martin Scorsese",
+        "answer3":"Steven Spilberg",
+        "correct_answer":"James Cameron",
+        "text":"Tko je režirao Titanik, Avatar i Terminatora?"
+      },
+      {
+        "answer1":"Charlize Theron",
+        "answer2":"Scarlett Johansson",
+        "answer3":"Alicia Vikander",
+        "correct_answer":"Angelina Jolie",
+        "text":"Tko je glumio glvanog lika u filmu Lara Croft: Tomb Raider iz 2001. godine?"
+      },
+      {
+        "answer1":"Zeleni biser",
+        "answer2":"Bijeli biser",
+        "answer3":"Crveni biser",
+        "correct_answer":"Crni biser",
+        "text":"Kako se zove brod Jacka Sparrowa?"
       }
+    ],
+        "size" : 10
+      },
+      "geografija" : {
+        "questions" : [ null, {
+          "answer1" : "NP Krka",
+          "answer2" : "NP Sjeverni Velebit",
+          "answer3" : "NP Kornati",
+          "correct_answer" : "NP Plitvicka jezera",
+          "text" : "Koji je povrsinom najveci nacionalni park u Hrvatskoj?"
+        }, {
+          "answer1" : "Sao Francisco",
+          "answer2" : "Nil",
+          "answer3" : "Amazona",
+          "correct_answer" : "Mississippi",
+          "text" : "Koja se rijeka nalazi u Sjedinjenim Americkim Drzavama?"
+        }, {
+          "answer1" : "Cres",
+          "answer2" : "Korcula",
+          "answer3" : "Brac",
+          "correct_answer" : "Hvar",
+          "text" : "Koji otok u Hrvatskoj ima najveci broj suncanih sati godisnje?"
+        }, {
+          "answer1" : "Egejsko more",
+          "answer2" : "Jonsko more",
+          "answer3" : "Jadransko more",
+          "correct_answer" : "Crno more",
+          "text" : "Rijeka Dunav ulijeva se u:"
+        }, {
+          "answer1" : "Montreal",
+          "answer2" : "Vancouver",
+          "answer3" : "Toronto",
+          "correct_answer" : "Ottawa",
+          "text" : "Koji je glavni grad Kanade?"
+        }, {
+          "answer1" : "Sv Gera",
+          "answer2" : "Vaganski vrh",
+          "answer3" : "Sinjal",
+          "correct_answer" : "Troglav",
+          "text" : "Koji je najvisi vrh Dinare?"
+        }, {
+          "answer1" : "PP Papuk",
+          "answer2" : "PP Biokovo",
+          "answer3" : "PP Velebit",
+          "correct_answer" : "PP Dinara",
+          "text" : "Koji je zadnji proglaseni park prirode u Hrvatskoj?"
+        }, {
+          "answer1" : "Armenija",
+          "answer2" : "Izrael",
+          "answer3" : "Indija",
+          "correct_answer" : "Libanon",
+          "text" : "U kojoj se dr�avi nalazi Byblos, jedan od najstarijih antickih gradova?"
+        }, {
+          "answer1" : "Luksemburga",
+          "answer2" : "Nizozemske",
+          "answer3" : "Belgije",
+          "correct_answer" : "Svicarske",
+          "text" : "Njemacki, talijanski, retoromanski i francuski su slu�beni jezici drzave:"
+        }, {
+          "answer1" : "Dobra",
+          "answer2" : "Mreznica",
+          "answer3" : "Korana",
+          "correct_answer" : "Glina",
+          "text" : "Karlovac je grad na 4 rijeke. Koja rijeka ne protjece Karlovcem?"
+        } ],
+        "size" : 10
+      },
+      "sport" : {
+        "size" : 0
+      }
+    },
+    "results" : {
+      "filmovi" : "",
+      "sport":"",
+      "serije":"",
+      "geografija" : ""
     }
   }
-  
+}
