@@ -23,6 +23,7 @@ public class QuizResult extends Activity {
     String username;
     String category;
     int points;
+    String total_points;
     private FirebaseDatabase database;
 
     public QuizResult() {
@@ -38,11 +39,12 @@ public class QuizResult extends Activity {
         username = intent.getStringExtra(Question.USERNAME_MESSAGE);
         category=intent.getStringExtra(Question.CATEGORY_MESSAGE);
         points=Integer.parseInt(message);
+        total_points=intent.getStringExtra(Question.POINTS_MESSAGE);
         String msg = "Čestitamo " + username + "!";
         TextView cong = findViewById(R.id.congratsLabel);
         cong.setText(msg);
         TextView resultText = findViewById(R.id.oneResultLabel);
-        resultText.setText("Tvoj rezultat: "+message+"/2");
+        resultText.setText("Tvoj rezultat: "+message+"/"+total_points);
         addToScoreBoard();
 
     }

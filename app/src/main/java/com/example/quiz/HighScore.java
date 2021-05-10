@@ -32,7 +32,7 @@ public class HighScore extends Activity {
         Intent intent = getIntent();
         category = intent.getStringExtra(QuizResult.CATEGORY_MESSAGE);
         TextView naslov=findViewById(R.id.scoreTitle);
-        naslov.setText("High Score ("+category+")");
+        naslov.setText("Ukupni rezultat ("+category+")");
         database= FirebaseDatabase.getInstance("https://quiz-app-be64e-default-rtdb.europe-west1.firebasedatabase.app/");
         loadScores(database);
 

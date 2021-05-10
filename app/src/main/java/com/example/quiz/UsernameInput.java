@@ -16,7 +16,7 @@ public class UsernameInput extends Activity {
         setContentView(R.layout.username);
     }
 
-
+//click on a button "Dalje" starts a game
         public void onClickButtonNext(View v){
             EditText textBox=findViewById(R.id.usernameInput);
             username=textBox.getText().toString();

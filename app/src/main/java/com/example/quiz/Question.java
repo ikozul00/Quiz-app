@@ -38,6 +38,7 @@ public class Question extends Activity {
     public static final String RESULT_MESSAGE = "com.example.quiz.MESSAGE";
     public static final String USERNAME_MESSAGE = "com.example.quiz.USERNAME";
     public static final String CATEGORY_MESSAGE = "com.example.quiz.CATEGORY";
+    public static final String POINTS_MESSAGE = "com.example.quiz.POINTS";
     private String category;
     private String username;
     public Question(){
@@ -162,7 +163,7 @@ public class Question extends Activity {
             button4.setEnabled(true);
             TextView msgView = findViewById(R.id.messageLabel);
             msgView.setText("");
-        if(number<=2){
+        if(number<=dataSet.size()&&number<=10){
             SetQuestion(dataSet.get(number-1));
         }
         else{
@@ -170,6 +171,7 @@ public class Question extends Activity {
             intent.putExtra(RESULT_MESSAGE, String.valueOf(points));
             intent.putExtra(USERNAME_MESSAGE, username);
             intent.putExtra(CATEGORY_MESSAGE,category);
+            intent.putExtra(POINTS_MESSAGE,String.valueOf(number-1));
             startActivity(intent);
         }
 
