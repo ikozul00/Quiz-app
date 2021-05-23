@@ -1,153 +1,129 @@
 {
   "db" : {
-    "myScore" : [ null, 10, 9 ],
     "quiz" : {
-      "serije" : {
-        "questions" : [ null, {
-          "answer1" : "The Morrison Tavern",
-          "answer2" : "The Garret Tavern",
-          "answer3" : "The Borrison Tavern",
-          "correct_answer" : "The Garrison Tavern",
-          "text" : "Kako se zove glavni pub u seriji Peaky Blinders gdje se nalaze Shelby?"
-        },
-        {
-          "answer1" : "Christopher Eccleston",
-          "answer2" : "Matt Smith",
-          "answer3" : "William Hartnell",
-          "correct_answer" : "David Tennant",
-          "text" : "Koji škotski glumac je glumio 10. Doktora u seriji Doctor Who?"
-        },
-        {
-          "answer1" : "Olivia Colman",
-          "answer2" : "Imelda Staunton",
-          "answer3" : "Vanessa Kirby",
-          "correct_answer" : "Claire Foy",
-          "text" : "Tko je glumio kraljicu Elizabetu II u prve dvije sezone serije The Crown?"
-        },
-        {
-          "answer1" : "Edith Melba Artois",
-          "answer2" : "Monsieur Alfonse",
-          "answer3" : "Monsieur Roger Leclerc",
-          "correct_answer" : "Rene Artois",
-          "text" : "U seriji Allo Allo,tko je vlasnik malog kafića u Francuskoj tijekom 2.svjetskog rata?"
-        },
-        {
-          "answer1" : "otvaranje Sueskog kanala",
-          "answer2" : "1.svjetski rat",
-          "answer3" : "2.svjetski rata",
-          "correct_answer" : "potapanje Titanika",
-          "text" : "Prva epizoda serije Downton Abbey počinje na isti dan kao koji stvarni povijesni događaj?"
-        },
-        {
-          "answer1" : "Florida",
-          "answer2" : "Texas",
-          "answer3" : "Louisiana",
-          "correct_answer" : "New Mexico",
-          "text" : "U kojoj američkoj državi se događa radnja serije Breaking Bad?"
-        },
-        {
-          "answer1" : "Cersei Lannister",
-          "answer2" : "Ned Stark",
-          "answer3" : "Jon Snow",
-          "correct_answer" : "Robert Baratheon",
-          "text" : "Tko je kralj Westerosa na samom početku serije Igra prijestolja?"
-        },
-        {
-          "answer1" : "1",
-          "answer2" : "4",
-          "answer3" : "2",
-          "correct_answer" : "3",
-          "text" : "Koliko puta se Ross rastao u seriji Prijateji?"
-        },
-        {
-          "answer1" : "5",
-          "answer2" : "4",
-          "answer3" : "2",
-          "correct_answer" : "3",
-          "text" : "Koliko djece ima Tywin Lannister iz serije Igra prijestolja?"
-        },
-        {
-          "answer1" : "Kate",
-          "answer2" : "Rachel",
-          "answer3" : "Monica",
-          "correct_answer" : "Ursula",
-          "text" : "U seriji Prijatelji kako se zove Phoebeina sestra blizanka?"
-        }
-    ],
-        "size" : 10
-      },
       "filmovi" : {
         "questions" : [ null, {
           "answer1" : "2",
           "answer2" : "3",
-          "answer3" : "8",
-          "correct_answer" : "7",
-          "text" : "Koliko dijelova ima Harry Potter?"
+          "answer3" : "7",
+          "correct_answer" : "8",
+          "text" : "Koliko dijelova ima filmska adaptacija Harry Pottera?"
         }, {
           "answer1" : "Johnny Deep",
           "answer2" : "Chris Hemswort",
           "answer3" : "Ryan Gosling",
           "correct_answer" : "Leonardo DiCaprio",
           "text" : "Tko glumi u Titanicu?"
-        } ,
-      {
-        "answer1":"Trnoružica",
-        "answer2":"Shrek",
-        "answer3":"Pepeljuga",
-        "correct_answer":"Snjeguljica i sedam patuljaka",
-        "text":"Kako se zove prvi objavljeni dugometražni animirani film?"
-      },
-      {
-        "answer1":"3",
-        "answer2":"6",
-        "answer3":"2",
-        "correct_answer":"5",
-        "text":"U koliko filmova Stevena Spilberga glumi Tom Hanks?"
-      },
-      {
-        "answer1":"Dirty Dancing",
-        "answer2":"Grease",
-        "answer3":"Saturday Night Fever",
-        "correct_answer":"Pulp Fiction",
-        "text":"Koji film sadrži poznatu scenu plesa glumaca Ume Thurman i Johna Travolte?"
-      },
-      {
-        "answer1":"Kapetan Amerika",
-        "answer2":"Superman",
-        "answer3":"Spiderman",
-        "correct_answer":"Batman",
-        "text":"Alfred Pennyworth je butler kojem superheroju?"
-      },
-      {
-        "answer1":"Dr. No",
-        "answer2":"Zlatno oko",
-        "answer3":"Casino Royale",
-        "correct_answer":"Iz Rusije s ljubavlju",
-        "text":"Kako se zove 2. film o James Bondu?"
-      },
-      {
-        "answer1":"Christopher Nolan",
-        "answer2":"Martin Scorsese",
-        "answer3":"Steven Spilberg",
-        "correct_answer":"James Cameron",
-        "text":"Tko je režirao Titanik, Avatar i Terminatora?"
-      },
-      {
-        "answer1":"Charlize Theron",
-        "answer2":"Scarlett Johansson",
-        "answer3":"Alicia Vikander",
-        "correct_answer":"Angelina Jolie",
-        "text":"Tko je glumio glvanog lika u filmu Lara Croft: Tomb Raider iz 2001. godine?"
-      },
-      {
-        "answer1":"Zeleni biser",
-        "answer2":"Bijeli biser",
-        "answer3":"Crveni biser",
-        "correct_answer":"Crni biser",
-        "text":"Kako se zove brod Jacka Sparrowa?"
-      }
-    ],
-        "size" : 10
+        }, {
+          "answer1" : "Trnoružica",
+          "answer2" : "Shrek",
+          "answer3" : "Pepeljuga",
+          "correct_answer" : "Snjeguljica i sedam patuljaka",
+          "text" : "Kako se zove prvi objavljeni dugometražni animirani film?"
+        }, {
+          "answer1" : "3",
+          "answer2" : "6",
+          "answer3" : "2",
+          "correct_answer" : "5",
+          "text" : "U koliko filmova Stevena Spilberga glumi Tom Hanks?"
+        }, {
+          "answer1" : "Dirty Dancing",
+          "answer2" : "Grease",
+          "answer3" : "Saturday Night Fever",
+          "correct_answer" : "Pulp Fiction",
+          "text" : "Koji film sadrži poznatu scenu plesa glumaca Ume Thurman i Johna Travolte?"
+        }, {
+          "answer1" : "Kapetan Amerika",
+          "answer2" : "Superman",
+          "answer3" : "Spiderman",
+          "correct_answer" : "Batman",
+          "text" : "Alfred Pennyworth je butler kojem superheroju?"
+        }, {
+          "answer1" : "Dr. No",
+          "answer2" : "Zlatno oko",
+          "answer3" : "Casino Royale",
+          "correct_answer" : "Iz Rusije s ljubavlju",
+          "text" : "Kako se zove 2. film o James Bondu?"
+        }, {
+          "answer1" : "Christopher Nolan",
+          "answer2" : "Martin Scorsese",
+          "answer3" : "Steven Spilberg",
+          "correct_answer" : "James Cameron",
+          "text" : "Tko je režirao Titanik, Avatar i Terminatora?"
+        }, {
+          "answer1" : "Charlize Theron",
+          "answer2" : "Scarlett Johansson",
+          "answer3" : "Alicia Vikander",
+          "correct_answer" : "Angelina Jolie",
+          "text" : "Tko je glumio glavnog lika u filmu Lara Croft: Tomb Raider iz 2001. godine?"
+        }, {
+          "answer1" : "Zeleni biser",
+          "answer2" : "Bijeli biser",
+          "answer3" : "Crveni biser",
+          "correct_answer" : "Crni biser",
+          "text" : "Kako se zove brod Jacka Sparrowa?"
+        },{
+          "answer1" : "Julia Roberts",
+          "answer2" : "Michelle Pfeiffer",
+          "answer3" : "Helen Hunt",
+          "correct_answer" : "Meg Ryan",
+          "text" : "Koja se glumica pojavljuje u filmu Top Gun iz 1986. ?"
+        },{
+          "answer1" : "12",
+          "answer2" : "9",
+          "answer3" : "3",
+          "correct_answer" : "6",
+          "text" : "Koliko Oskara je osvojio film Forrest Gump?"
+        }, {
+          "answer1" : "Kanada",
+          "answer2" : "Australija",
+          "answer3" : "SAD",
+          "correct_answer" : "Novi Zeland",
+          "text" : "U kojoj državi je rođen glumac Russell Crowe?"
+        }, {
+          "answer1" : "Dundee",
+          "answer2" : "Baltimore",
+          "answer3" : "Atlanta",
+          "correct_answer" : "Chicago",
+          "text" : "Koji američki grad je mjesto radnje znastveno-fantastičnog filma Različita iz 2014. ?"
+        },{
+          "answer1" : "Jerry",
+          "answer2" : "Nema ime",
+          "answer3" : "Freddy",
+          "correct_answer" : "Jason",
+          "text" : "U filmu Petak 13. (Friday the 13th) kako se zove maskirani ubojica?"
+        }, {
+          "answer1" : "ljudi na galiji",
+          "answer2" : "njegovi prijatelji",
+          "answer3" : "njegovi sluge",
+          "correct_answer" : "konji u njegovoj kočiji",
+          "text" : "U filmu Ben Hur, tko su Aldeberan, Antares, Atair i Rigel?"
+        }, {
+          "answer1" : "Aurora",
+          "answer2" : "Ursula",
+          "answer3" : "Grimhilde",
+          "correct_answer" : "Maleficent",
+          "text" : "U Walt Disneyevom filmu Trnoružica kako se zove zla vještica?"
+        }, {
+          "answer1" : "miješa lijevo i desno",
+          "answer2" : "vrtoglavice",
+          "answer3" : "dugotrajnog gubitka pamćenja",
+          "correct_answer" : "kratkotrajnog gubitka pamćenja",
+          "text" : "U filmu Potraga za Nemom, Dora pati od čega?"
+        },{
+          "answer1" : "Daniel Stern",
+          "answer2" : "John Heard",
+          "answer3" : "Joe Pesci",
+          "correct_answer" : "Macaulay Culkin",
+          "text" : "Tko glumi dječaka Kevina McCallistera u filmu Samu kući?"
+        },{
+          "answer1" : "2",
+          "answer2" : "5",
+          "answer3" : "3",
+          "correct_answer" : "4",
+          "text" : "Koliko prstiju Mickey Mouse ima?"
+        } ],
+        "size" : 20
       },
       "geografija" : {
         "questions" : [ null, {
@@ -197,7 +173,7 @@
           "answer2" : "Izrael",
           "answer3" : "Indija",
           "correct_answer" : "Libanon",
-          "text" : "U kojoj se dr�avi nalazi Byblos, jedan od najstarijih antickih gradova?"
+          "text" : "U kojoj se državi nalazi Byblos, jedan od najstarijih antickih gradova?"
         }, {
           "answer1" : "Luksemburga",
           "answer2" : "Nizozemske",
@@ -213,15 +189,360 @@
         } ],
         "size" : 10
       },
+      "serije" : {
+        "questions" : [ null, {
+          "answer1" : "The Morrison Tavern",
+          "answer2" : "The Garret Tavern",
+          "answer3" : "The Borrison Tavern",
+          "correct_answer" : "The Garrison Tavern",
+          "text" : "Kako se zove glavni pub u seriji Peaky Blinders gdje se nalaze Shelby?"
+        }, {
+          "answer1" : "Christopher Eccleston",
+          "answer2" : "Matt Smith",
+          "answer3" : "William Hartnell",
+          "correct_answer" : "David Tennant",
+          "text" : "Koji škotski glumac je glumio 10. Doktora u seriji Doctor Who?"
+        }, {
+          "answer1" : "Olivia Colman",
+          "answer2" : "Imelda Staunton",
+          "answer3" : "Vanessa Kirby",
+          "correct_answer" : "Claire Foy",
+          "text" : "Tko je glumio kraljicu Elizabetu II u prve dvije sezone serije The Crown?"
+        }, {
+          "answer1" : "Edith Melba Artois",
+          "answer2" : "Monsieur Alfonse",
+          "answer3" : "Monsieur Roger Leclerc",
+          "correct_answer" : "Rene Artois",
+          "text" : "U seriji Allo Allo,tko je vlasnik malog kafića u Francuskoj tijekom 2.svjetskog rata?"
+        }, {
+          "answer1" : "otvaranje Sueskog kanala",
+          "answer2" : "1.svjetski rat",
+          "answer3" : "2.svjetski rata",
+          "correct_answer" : "potapanje Titanika",
+          "text" : "Prva epizoda serije Downton Abbey počinje na isti dan kao koji stvarni povijesni događaj?"
+        }, {
+          "answer1" : "Florida",
+          "answer2" : "Texas",
+          "answer3" : "Louisiana",
+          "correct_answer" : "New Mexico",
+          "text" : "U kojoj američkoj državi se događa radnja serije Breaking Bad?"
+        }, {
+          "answer1" : "Cersei Lannister",
+          "answer2" : "Ned Stark",
+          "answer3" : "Jon Snow",
+          "correct_answer" : "Robert Baratheon",
+          "text" : "Tko je kralj Westerosa na samom početku serije Igra prijestolja?"
+        }, {
+          "answer1" : "1",
+          "answer2" : "4",
+          "answer3" : "2",
+          "correct_answer" : "3",
+          "text" : "Koliko puta se Ross rastao u seriji Prijateji?"
+        }, {
+          "answer1" : "5",
+          "answer2" : "4",
+          "answer3" : "2",
+          "correct_answer" : "3",
+          "text" : "Koliko djece ima Tywin Lannister iz serije Igra prijestolja?"
+        }, {
+          "answer1" : "Kate",
+          "answer2" : "Rachel",
+          "answer3" : "Monica",
+          "correct_answer" : "Ursula",
+          "text" : "U seriji Prijatelji kako se zove Phoebeina sestra blizanka?"
+        }, {
+          "answer1" : "1994",
+          "answer2" : "1989",
+          "answer3" : "1979",
+          "correct_answer" : "1984",
+          "text" : "Koje godine su Simpsoni prvi put prikazani?"
+        }, {
+          "answer1" : "C. S. Lewis",
+          "answer2" : "J. K. Rowling",
+          "answer3" : "J. R. R. Tolkien",
+          "correct_answer" : "George R. R. Martin",
+          "text" : "Serija Igra prijestolja je adaptacija romana kojeg autora?"
+        }, {
+          "answer1" : "Mike Delgado",
+          "answer2" : "Luke Delgado",
+          "answer3" : "Danny Delgado",
+          "correct_answer" : "Manny Delgado",
+          "text" : "U seriji Moderna obitelj, kako se zove Glorijin sin?"
+        }, {
+          "answer1" : "Terence 'Terry' Jeffords",
+          "answer2" : "Michael Hitchcock",
+          "answer3" : "Charles Boyle",
+          "correct_answer" : "Jake Peralta",
+          "text" : "Kako se zove lik kojeg glumi Andy Samberg u seriji Brooklyn 99?"
+        }, {
+          "answer1" : "Giovanni",
+          "answer2" : "Giancarlo",
+          "answer3" : "Antonio",
+          "correct_answer" : "Marcel",
+          "text" : "Kako se zove Rossov kućni ljubimac majmun u seriji Prijatelji?"
+        }, {
+          "answer1" : "11",
+          "answer2" : "10",
+          "answer3" : "8",
+          "correct_answer" : "9",
+          "text" : "Koliko sezona ima serija Seinfield?"
+        }, {
+          "answer1" : "Magic Falls",
+          "answer2" : "Gravity Falls",
+          "answer3" : "Forks",
+          "correct_answer" : "Mystic Falls",
+          "text" : "U kojem izmišljenom gradu je smještena serija Vampirski dnevnici?"
+        }, {
+          "answer1" : "Tom Holland",
+          "answer2" : "Taylor Lautner",
+          "answer3" : "David Tennant",
+          "correct_answer" : "Benedict Cumberbatch",
+          "text" : "Tko glumi Sherlock Holmesa u seriji Sherlock?"
+        }, {
+          "answer1" : "Valencia",
+          "answer2" : "Sevilla",
+          "answer3" : "Barcelona",
+          "correct_answer" : "Madrid",
+          "text" : "U koji španjolski grad je smještena serija La casa de papel?"
+        }, {
+          "answer1" : "SAD",
+          "answer2" : "Škotska",
+          "answer3" : "Irska",
+          "correct_answer" : "Engleska",
+          "text" : "U koju zemlju je serija Bridgerton smještena?"
+        }],
+        "size" : 20
+      },
       "sport" : {
-        "size" : 0
+        "questions" : [ null, {
+          "answer1" : "207 cm",
+          "answer2" : "209 cm",
+          "answer3" : "206 cm",
+          "correct_answer" : "208 cm",
+          "text" : "Koji je osobni rekord atleticarke Blanke Vlasic u skoku u vis?"
+        }, {
+          "answer1" : "Brazila",
+          "answer2" : "Turske",
+          "answer3" : "Grcke",
+          "correct_answer" : "Islanda",
+          "text" : "Protiv koga je Hrvatska nogometna reprezentacija igrala dodatne kvalifikacije za Svjetsko nogometno prvenstvo 2014. godine?"
+        }, {
+          "answer1" : "Rukomet",
+          "answer2" : "Kosarka",
+          "answer3" : "Ameri�ki nogomet",
+          "correct_answer" : "Bejzbol",
+          "text" : "U kojem se sportu natjece momcad Boston Red Sox?"
+        }, {
+          "answer1" : "Tottenhama",
+          "answer2" : "Chelsea",
+          "answer3" : "Manchester Uniteda",
+          "correct_answer" : "Liverpoola",
+          "text" : "Anfield je stadion nogometnog kluba:"
+        }, {
+          "answer1" : "Antoine Griezmann",
+          "answer2" : "Cristiano Ronaldo",
+          "answer3" : "Luka Modric",
+          "correct_answer" : "Neymar",
+          "text" : "Koji igrac nije bio u top 3 na dodjeli nagrade Zlatna lopta 2018. godine?"
+        }, {
+          "answer1" : "Osaka 2007.",
+          "answer2" : "Peking 2015.",
+          "answer3" : "Moskva 2013.",
+          "correct_answer" : "Berlin 2009.",
+          "text" : "Na kojem je SP-u Usain Bolt postavio dva svjetska rekorda, na 100 m - 9,58 sek i na 200 metara - 19,19 sek?"
+        }, {
+          "answer1" : "SAD",
+          "answer2" : "Argentinu",
+          "answer3" : "Francusku",
+          "correct_answer" : "Slovačku",
+          "text" : "Pobijedivši koju državu je Hrvatska 2005. godine osvojila Davis Cup?"
+        }, {
+          "answer1" : "PSG",
+          "answer2" : "Sevilla",
+          "answer3" : "Barcelona",
+          "correct_answer" : "Bordeaux",
+          "text" : "Za koji je klub u svojoj igrackoj karijeri igrao Zinedine Zidane?"
+        }, {
+          "answer1" : "Zoran Zekic",
+          "answer2" : "Dino Drpic",
+          "answer3" : "Damir Milinovic",
+          "correct_answer" : "Marijan Buljat",
+          "text" : "U povijesti je samo jedan nogometas zaigrao za Dinamo, Hajduk, Rijeku i Osijek. Koji je to igrac?"
+        }, {
+          "answer1" : "Milan i Roma",
+          "answer2" : "Roma i Inter",
+          "answer3" : "Juventus i Roma",
+          "correct_answer" : "Inter i Milan",
+          "text" : "Koji klubovi igraju Derby della Madonnina?"
+        } ],
+        "size" : 10
       }
     },
     "results" : {
-      "filmovi" : "",
-      "sport":"",
-      "serije":"",
-      "geografija" : ""
+      "filmovi" : [ {
+        "rank" : 1,
+        "result" : 10,
+        "username" : "ivana"
+      }, {
+        "rank" : 2,
+        "result" : 9,
+        "username" : "abc"
+      }, {
+        "rank" : 3,
+        "result" : 9,
+        "username" : "petra"
+      }, {
+        "rank" : 4,
+        "result" : 9,
+        "username" : "petra"
+      }, {
+        "rank" : 5,
+        "result" : 9,
+        "username" : "ivana"
+      }, {
+        "rank" : 6,
+        "result" : 8,
+        "username" : "iva"
+      }, {
+        "rank" : 7,
+        "result" : 8,
+        "username" : "ivana"
+      }, {
+        "rank" : 8,
+        "result" : 7,
+        "username" : "mare"
+      }, {
+        "rank" : 9,
+        "result" : 7,
+        "username" : "mare"
+      }, {
+        "rank" : 10,
+        "result" : 7,
+        "username" : "mare"
+      } ],
+      "geografija" : [ {
+        "rank" : 1,
+        "result" : 10,
+        "username" : "maja123"
+      }, {
+        "rank" : 2,
+        "result" : 10,
+        "username" : "ssii"
+      }, {
+        "rank" : 3,
+        "result" : 6,
+        "username" : "iva"
+      }, {
+        "rank" : 4,
+        "result" : 6,
+        "username" : "tea"
+      }, {
+        "rank" : 5,
+        "result" : 4,
+        "username" : "petra"
+      }, {
+        "rank" : 6,
+        "result" : 3,
+        "username" : "aaa"
+      }, {
+        "rank" : 7,
+        "result" : 0,
+        "username" : ""
+      }, {
+        "rank" : 8,
+        "result" : 0,
+        "username" : ""
+      }, {
+        "rank" : 9,
+        "result" : 0,
+        "username" : ""
+      }, {
+        "rank" : 10,
+        "result" : 0,
+        "username" : ""
+      } ],
+      "serije" : [ {
+        "rank" : 1,
+        "result" : 10,
+        "username" : "ivana"
+      }, {
+        "rank" : 2,
+        "result" : 9,
+        "username" : "iva"
+      }, {
+        "rank" : 3,
+        "result" : 8,
+        "username" : "tea"
+      }, {
+        "rank" : 4,
+        "result" : 7,
+        "username" : "ana"
+      }, {
+        "rank" : 5,
+        "result" : 6,
+        "username" : "maja123"
+      }, {
+        "rank" : 6,
+        "result" : 6,
+        "username" : "abc"
+      }, {
+        "rank" : 7,
+        "result" : 6,
+        "username" : "ivana"
+      }, {
+        "rank" : 8,
+        "result" : 5,
+        "username" : "ana"
+      }, {
+        "rank" : 9,
+        "result" : 4,
+        "username" : "ssii"
+      }, {
+        "rank" : 10,
+        "result" : 3,
+        "username" : "petra"
+      } ],
+      "sport" : [ {
+        "rank" : 1,
+        "result" : 8,
+        "username" : "maja123"
+      }, {
+        "rank" : 2,
+        "result" : 6,
+        "username" : "ivana"
+      }, {
+        "rank" : 3,
+        "result" : 4,
+        "username" : "aaa"
+      }, {
+        "rank" : 4,
+        "result" : 4,
+        "username" : "ivana"
+      }, {
+        "rank" : 5,
+        "result" : 2,
+        "username" : "aaa"
+      }, {
+        "rank" : 6,
+        "result" : 2,
+        "username" : "aaa"
+      }, {
+        "rank" : 7,
+        "result" : 2,
+        "username" : ""
+      }, {
+        "rank" : 8,
+        "result" : 0,
+        "username" : ""
+      }, {
+        "rank" : 9,
+        "result" : 0,
+        "username" : ""
+      }, {
+        "rank" : 10,
+        "result" : 0,
+        "username" : ""
+      } ]
     }
   }
 }
